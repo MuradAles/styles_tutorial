@@ -1,8 +1,16 @@
-
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import PageStructure from "./components/PageStructure"
 function App() {
   return (
-    <div>
-
+    <div className="App">
+      <Navigation />
+      <div className="Body">
+        <About />
+        <PageStructure />
+        <Footer />
+      </div>
     </div>
   );
 }
