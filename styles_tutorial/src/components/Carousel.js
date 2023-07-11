@@ -1,8 +1,7 @@
 import { useState } from 'react';
-function Carousel(dataContainer) {
+function Carousel({ dataContainer }) {
     const [index, setIndex] = useState(0);
-    const [data, setData] = useState()
-    const length = 3;
+    const length = dataContainer.length;
     const handlePrevious = () => {
         const newIndex = index - 1;
         setIndex(newIndex < 0 ? length - 1 : newIndex)
@@ -15,8 +14,7 @@ function Carousel(dataContainer) {
         <div className="Carousel">
             <button onClick={handlePrevious}>Previous</button>
             <button onClick={handleNext}>Next</button>
-            <p>{dataContainer[index]}</p>
-            <p>{index}</p>
+            {dataContainer[index]}
         </div>
     )
 }

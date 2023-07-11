@@ -1,0 +1,15 @@
+ol li {
+    list-style-type: none;
+    /* Removes the default numbering */
+    padding-left: 0px;
+    /* Resets the left padding */
+}
+
+li::before {
+    content: "";
+    /* Removes the default numbering */
+}
+
+.Carousel_containter {
+    padding: 0px;
+}
