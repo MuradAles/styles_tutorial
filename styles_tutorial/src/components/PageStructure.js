@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 import "./PageStructure.css"
 function PageStructure() {
     const dataContainer = [
-        <li id="slide_1" className="Carousel_box">
+        <li className="html_structure_1">
             <header className="S_header">
                 Header 1
             </header>
@@ -11,7 +11,7 @@ function PageStructure() {
                 Navigation
             </nav>
             <article className="S_article">
-                Body
+                Article
                 <section className="S_section">
                     Section 1
                 </section>
@@ -19,14 +19,14 @@ function PageStructure() {
                     Section 2
                 </section>
             </article>
-            <aside>
+            <aside className="S_aside">
                 Aside
             </aside>
             <footer className="S_footer">
                 Footer
             </footer>
         </li>,
-        <li id="slide_2" className="Carousel_box">
+        <li className="html_structure_2">
             <header className="S_header">
                 Header 2
             </header>
@@ -49,7 +49,7 @@ function PageStructure() {
                 Footer
             </footer>
         </li>,
-        <li id="slide_3" className="Carousel_box">
+        <li className="html_structure_3">
             <header className="S_header">
                 Header 3
             </header>
