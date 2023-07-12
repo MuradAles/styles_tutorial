@@ -34,7 +34,7 @@ function PageStructure() {
                 Navigation
             </nav>
             <article className="S_article">
-                Body
+                Article
                 <section className="S_section">
                     Section 1
                 </section>
@@ -42,7 +42,7 @@ function PageStructure() {
                     Section 2
                 </section>
             </article>
-            <aside>
+            <aside className="S_aside">
                 Aside
             </aside>
             <footer className="S_footer">
@@ -57,7 +57,7 @@ function PageStructure() {
                 Navigation
             </nav>
             <article className="S_article">
-                Body
+                Article
                 <section className="S_section">
                     Section 1
                 </section>
@@ -65,7 +65,7 @@ function PageStructure() {
                     Section 2
                 </section>
             </article>
-            <aside>
+            <aside className="S_aside">
                 Aside
             </aside>
             <footer className="S_footer">

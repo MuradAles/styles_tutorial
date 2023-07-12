@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./Carousel.css"
 function Carousel({ dataContainer }) {
     const [index, setIndex] = useState(0);
     const length = dataContainer.length;
@@ -12,9 +13,9 @@ function Carousel({ dataContainer }) {
     }
     return (
         <div className="Carousel">
-            <button onClick={handlePrevious}>Previous</button>
-            <button onClick={handleNext}>Next</button>
+            <button className="B_Previous" onClick={handlePrevious}>Previous</button>
             {dataContainer[index]}
+            <button className="B_Next" onClick={handleNext}>Next</button>
         </div>
     )
 }

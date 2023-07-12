@@ -1,0 +1,17 @@
+.Carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.bob {
+    position: relative;
+    /* Set .bob as a positioning context for absolute positioning */
+}
+
+.B_Previous {
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    /* Center the buttons horizontally */
+}
