@@ -12,14 +12,15 @@ function Carousel({ dataContainer }) {
         setIndex(newIndex >= length ? 0 : newIndex)
     }
     return (
-        <div className="Carousel">
-            <div className="Div_Carousel">
-                {dataContainer[index]}
+        <>
+            <div className="Carousel">
+                <div className="Div_Carousel">
+                    {dataContainer[index]}
+                </div>
+                <button className="B_Next" onClick={handleNext}><div class="Arrow_Left"></div></button>
+                <button className="B_Previous" onClick={handlePrevious}><div class="Arrow_Right"></div></button>
             </div>
-            <button className="B_Next" onClick={handleNext}>Next</button>
-            <button className="B_Previous" onClick={handlePrevious}>Previous</button>
-            <div class="Arrow"></div>
-        </div>
+        </>
     )
 }
 export default Carousel
