@@ -13,9 +13,12 @@ function Carousel({ dataContainer }) {
     }
     return (
         <div className="Carousel">
-            <button className="B_Previous" onClick={handlePrevious}>Previous</button>
-            {dataContainer[index]}
+            <div className="Div_Carousel">
+                {dataContainer[index]}
+            </div>
             <button className="B_Next" onClick={handleNext}>Next</button>
+            <button className="B_Previous" onClick={handlePrevious}>Previous</button>
+            <div class="Arrow"></div>
         </div>
     )
 }

@@ -38,46 +38,34 @@ li::before {
     border-style: solid;
     border-color: red;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
 
 .S_nav {
     border-style: solid;
     border-color: blue;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
 
 .S_article {
     border-style: solid;
     border-color: green;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
 
 .S_section {
     border-style: solid;
     border-color: purple;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
 
 .S_aside {
     border-style: solid;
     border-color: yellow;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
 
 .S_footer {
     border-style: solid;
     border-color: pink;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
 }
