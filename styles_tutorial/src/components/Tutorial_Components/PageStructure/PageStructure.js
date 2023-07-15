@@ -1,5 +1,5 @@
 // html5 page structure
-import Carousel from "./Carousel";
+import Carousel from "../Carousel/Carousel";
 import "./PageStructure.css"
 function PageStructure() {
     const dataContainer = [

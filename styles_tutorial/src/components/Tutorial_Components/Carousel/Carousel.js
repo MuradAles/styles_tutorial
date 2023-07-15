@@ -17,8 +17,8 @@ function Carousel({ dataContainer }) {
                 <div className="Div_Carousel">
                     {dataContainer[index]}
                 </div>
-                <button className="B_Next" onClick={handleNext}><div class="Arrow_Left"></div></button>
-                <button className="B_Previous" onClick={handlePrevious}><div class="Arrow_Right"></div></button>
+                <button className="Arrow_Left" onClick={handleNext}></button>
+                <button className="Arrow_Right" onClick={handlePrevious}></button>
             </div>
         </>
     )
