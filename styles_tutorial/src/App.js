@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navigation from "./components/Layouts/Navigation/Navigation";
 import PageStructure from "./components/Tutorial_Components/PageStructure/PageStructure"
+
+//Page Layout
+import Header from "./components/Layouts/Header/Header";
+import Navigation from "./components/Layouts/Navigation/Navigation";
 import Footer from "./components/Layouts/Footer/Footer";
 import About from "./components/About";
 import PageNotFound from "./components/Layouts/PageNotFound/PageNotFound";
@@ -8,6 +11,7 @@ import "./App.css"
 function App() {
   return (
     <div className="App">
+      <Header />
       <BrowserRouter>
         <Navigation />
         <Routes>

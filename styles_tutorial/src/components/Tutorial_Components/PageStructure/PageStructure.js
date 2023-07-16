@@ -5,71 +5,71 @@ function PageStructure() {
     const dataContainer = [
         <div className="html_structure_1">
             <header className="S_header">
-                Header 1
+                <p className="S_p">Header</p>
             </header>
             <nav className="S_nav">
-                Navigation
+                <p className="S_p">Navigation</p>
             </nav>
             <article className="S_article">
-                Article
+                <p className="S_p article">Article</p>
                 <section className="S_section">
-                    Section 1
+                    <p className="S_p">Section 1</p>
                 </section>
                 <section className="S_section">
-                    Section 2
+                    <p className="S_p">Section 2</p>
                 </section>
             </article>
             <aside className="S_aside">
-                Aside
+                <p className="S_p">Aside</p>
             </aside>
             <footer className="S_footer">
-                Footer
+                <p className="S_p">Footer</p>
             </footer>
         </div>,
         <div className="html_structure_2">
             <header className="S_header">
-                Header 2
+                <p className="S_p">Header</p>
             </header>
             <nav className="S_nav">
-                Navigation
+                <p className="S_p">Navigation</p>
             </nav>
             <article className="S_article">
-                Article
+                <p className="S_p article">Article</p>
                 <section className="S_section">
-                    Section 1
+                    <p className="S_p">Section 1</p>
                 </section>
                 <section className="S_section">
-                    Section 2
+                    <p className="S_p">Section 2</p>
                 </section>
             </article>
             <aside className="S_aside">
-                Aside
+                <p className="S_p">Aside</p>
             </aside>
             <footer className="S_footer">
-                Footer
+                <p className="S_p">Footer</p>
             </footer>
         </div>,
         <div className="html_structure_3">
             <header className="S_header">
-                Header 3
+                <p className="S_p">Header</p>
             </header>
             <nav className="S_nav">
-                Navigation
+                <p className="S_p">Navigation</p>
             </nav>
             <article className="S_article">
-                Article
+                <p className="S_p article">Article</p>
                 <section className="S_section">
-                    Section 1
+                    <p className="S_p">Section 1</p>
                 </section>
                 <section className="S_section">
-                    Section 2
+                    <p className="S_p">Section 2</p>
                 </section>
             </article>
             <aside className="S_aside">
-                Aside
+                <p className="S_p">Aside</p>
             </aside>
             <footer className="S_footer">
-                Footer
+                <p className="S_p">Footer</p>
             </footer>
         </div>
     ];

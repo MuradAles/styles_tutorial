@@ -6,10 +6,10 @@ function Navigation() {
         <nav className="navbar">
             <ul className="nav-links">
                 <li>
-                    <NavLink to="/PageStructure" className="active">Page Structure</NavLink>
+                    <NavLink to="/About" className="active">About</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/About" className="active">About</NavLink>
+                    <NavLink to="/PageStructure" className="active">Page Structure</NavLink>
                 </li>
             </ul>
         </nav>
