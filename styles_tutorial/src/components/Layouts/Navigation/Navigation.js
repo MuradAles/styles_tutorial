@@ -11,6 +11,9 @@ function Navigation() {
                 <li>
                     <NavLink to="/PageStructure" className="active">Page Structure</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/Shape" className="active">Shape</NavLink>
+                </li>
             </ul>
         </nav>
     );

@@ -7,6 +7,7 @@ import Navigation from "./components/Layouts/Navigation/Navigation";
 import Footer from "./components/Layouts/Footer/Footer";
 import About from "./components/About";
 import PageNotFound from "./components/Layouts/PageNotFound/PageNotFound";
+import Shape from "./components/Tutorial_Components/Shapes/Shapes";
 import "./App.css"
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <Route
             path="*"
             element={<PageNotFound />} />
+          <Route
+            path="/Shape"
+            element={< Shape />} />
         </Routes>
       </BrowserRouter>
       <Footer />

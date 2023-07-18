@@ -1,0 +1,32 @@
+.Shape_svg {
+    border: solid red;
+}
+
+.Shape_circle {
+    fill: blue;
+    stroke: red;
+    stroke-width: 10px;
+}
+
+.Shape_rect {
+    fill: azure;
+    stroke: orange;
+    stroke-width: 10px;
+}
+
+.Shape_ellipse {
+    fill: rgb(0, 255, 42);
+    stroke: rgb(153, 10, 0);
+    stroke-width: 10px;
+}
+
+.Shape_line {
+    stroke: rgb(0, 0, 255);
+    stroke-width: 10px;
+}
+
+.Shape_polyline {
+    fill: none;
+    stroke: black;
+    stroke-width: 3
+}
