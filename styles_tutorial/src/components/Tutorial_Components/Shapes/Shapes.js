@@ -145,14 +145,14 @@ function Shape() {
                     fillOpacity=".6"
                     stroke="black" >
                     <animate id="p1" attributeName="r" attributeType="XML"
-                        from="30" to="10" begin="0s" dur="4s" fill="freeze" />
+                        from="30" to="10" begin="0s" dur="3s" fill="freeze" />
                 </circle>
                 <circle cx="120" cy="60" r="10"
                     fill="red"
                     fillOpacity=".5"
                     stroke="black">
                     <animate attributeName="r" attributeType="XML"
-                        begin="p1.end" dur="4s" from="10" to="30" fill="freeze" />
+                        begin="p1.end" dur="3s" from="10" to="30" fill="freeze" />
                 </circle>
             </svg>
             <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
@@ -187,14 +187,14 @@ function Shape() {
             <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
                 <rect x="50" y="40" width="60" height="60"
                     fill="purple"
-                    fill-opacity=".4"
+                    fillOpacity=".4"
                     stroke="black">
                     <animate attributeName="width" attributeType="XML"
                         begin="0s" dur="4s" from="60" to="0" fill="freeze" />
                     <animate attributeName="height" attributeType="XML"
                         begin="0s" dur="4s" from="60" to="0" fill="freeze" />
                 </rect>
-                <text text-anchor="middle" x="60" y="60"
+                <text textAnchor="middle" x="60" y="60"
                     visibility="hidden">
                     <set attributeName="visibility" attributeType="CSS"
                         to="visible" begin="4.5s" dur="1s" fill="freeze" />
@@ -206,7 +206,7 @@ function Shape() {
                 <rect x="10" y="10" height="100" width="100"
                     stroke="black"
                     fill="purple"
-                    stroke-width="2">
+                    strokeWidth="2">
                     <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
                         begin="0s" dur="5s" from="0 60 60 " to="360 60 60" />
                 </rect>
@@ -223,17 +223,52 @@ function Shape() {
                     <animateMotion from="-20,-20" to="300,300" dur="4s" fill="freeze" repeatCount="indefinite" />
                 </g>
             </svg>
-            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
-                <path d="M50,125 C100,25 150,225, 200,125 M200,125 C120,25 150,225, 50,125"
-                    fill="none"
-                    stroke="green" />
-                <path d="M-10,-3 L10,-3 L0,-25z"
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 100 100">
+                <path d="M20,25 
+                    C20,15 50,15 50,25
+                    C50,35 80,35 80,25
+                    C80,15 50,15 50,25
+                    C50,35 20,35 20,25"
+                    fill="none" stroke="black" strokeWidth="2" />
+                <path d="M-5,-5 L5,-5 L5,5 L-5,5z"
                     fill="yellow"
                     stroke="black">
                     <animateMotion
-                        path="M50,125 C100,25 150,225, 200,125 M200,125 C120,25 150,225, 50,125"
+                        path="M20,25 
+                        C20,15 50,15 50,25
+                        C50,35 80,35 80,25
+                        C80,15 50,15 50,25
+                        C50,35 20,35 20,25"
                         dur="6s" repeatCount="indefinite" />
                 </path>
+            </svg>
+            <p>Link in SVG</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <a href="https://www.javatpoint.com/">
+                    <text x="60" y="40" fontSize="18pt">Dog</text>
+                </a>
+                <a href="https://www.javatpoint.com/">
+                    <circle cx="50" cy="80" r="20" fill="red" />
+                    <rect x="90" y="60" width="40" height="40" fill="green" />
+                </a>
+            </svg>
+            <p>Filters</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <defs>
+                    <filter id="blurFilter" x="0" y="0">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+                    </filter>
+                </defs>
+                <rect
+                    width="120"
+                    height="120"
+                    x="20"
+                    y="20"
+                    stroke="green"
+                    strokeWidth="10"
+                    fill="purple"
+                    filter="url(#blurFilter)"
+                />
             </svg>
         </div >
     )
