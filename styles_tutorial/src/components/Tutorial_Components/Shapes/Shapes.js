@@ -87,7 +87,6 @@ function Shape() {
                         <circle cx="40" cy="40" r="40" />
                     </g>
                 </defs>
-
                 <use href="#shape" x="40" y="40" />
                 <use href="#shape" x="160" y="40" />
             </svg>
@@ -99,7 +98,6 @@ function Shape() {
                         <circle cx="40" cy="40" r="40" />
                     </g>
                 </symbol>
-
                 <use href="#shape1" x="50" y="30" />
             </svg>
             <p>pattern</p>
@@ -124,7 +122,6 @@ function Shape() {
                         <rect x="15" y="15" width="40" height="40" />
                     </clipPath>
                 </defs>
-
                 <circle cx="50" cy="50" r="30" clipPath="url(#clip)" />
             </svg>
             <p>Mask</p>
@@ -136,7 +133,6 @@ function Shape() {
                             fill="#ffffff" />
                     </mask>
                 </defs>
-
                 <rect x="1" y="1" width="200" height="200"
                     stroke="none"
                     fill="#0000ff"
@@ -151,7 +147,6 @@ function Shape() {
                     <animate id="p1" attributeName="r" attributeType="XML"
                         from="30" to="10" begin="0s" dur="4s" fill="freeze" />
                 </circle>
-
                 <circle cx="120" cy="60" r="10"
                     fill="red"
                     fillOpacity=".5"
@@ -185,9 +180,60 @@ function Shape() {
                     stroke="black">
                     <animate attributeName="cx" attributeType="XML"
                         begin="circle-anim.repeat(1)+.5s" dur="8s" repeatDur="12s"
-                        from="260" to="60" fill="freeze" />
+                        from="250" to="60" fill="freeze" />
                 </circle>
-
+            </svg>
+            <p>set</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
+                <rect x="50" y="40" width="60" height="60"
+                    fill="purple"
+                    fill-opacity=".4"
+                    stroke="black">
+                    <animate attributeName="width" attributeType="XML"
+                        begin="0s" dur="4s" from="60" to="0" fill="freeze" />
+                    <animate attributeName="height" attributeType="XML"
+                        begin="0s" dur="4s" from="60" to="0" fill="freeze" />
+                </rect>
+                <text text-anchor="middle" x="60" y="60"
+                    visibility="hidden">
+                    <set attributeName="visibility" attributeType="CSS"
+                        to="visible" begin="4.5s" dur="1s" fill="freeze" />
+                    All gone!
+                </text>
+            </svg>
+            <p>animateTransform</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
+                <rect x="10" y="10" height="100" width="100"
+                    stroke="black"
+                    fill="purple"
+                    stroke-width="2">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                        begin="0s" dur="5s" from="0 60 60 " to="360 60 60" />
+                </rect>
+            </svg>
+            <p>animateMotion</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
+                <g>
+                    <rect x="0" y="0" width="30" height="30"
+                        fill="gray"
+                        stroke="black" />
+                    <circle cx="30" cy="30" r="15"
+                        fill="red"
+                        stroke="black" />
+                    <animateMotion from="-20,-20" to="300,300" dur="4s" fill="freeze" repeatCount="indefinite" />
+                </g>
+            </svg>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 300 300">
+                <path d="M50,125 C100,25 150,225, 200,125 M200,125 C120,25 150,225, 50,125"
+                    fill="none"
+                    stroke="green" />
+                <path d="M-10,-3 L10,-3 L0,-25z"
+                    fill="yellow"
+                    stroke="black">
+                    <animateMotion
+                        path="M50,125 C100,25 150,225, 200,125 M200,125 C120,25 150,225, 50,125"
+                        dur="6s" repeatCount="indefinite" />
+                </path>
             </svg>
         </div >
     )
