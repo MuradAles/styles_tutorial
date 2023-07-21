@@ -270,6 +270,30 @@ function Shape() {
                     filter="url(#blurFilter)"
                 />
             </svg>
+            <p>feOffset</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <defs>
+                    <filter id="bob1" x="0" y="0" width="200%" height="200%">
+                        <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                </defs>
+                <rect x="10" y="10" width="90" height="90" stroke="blue" strokeWidth="3" fill="purple" filter="url(#bob1)" />
+            </svg>
+            <p>feOffset</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <filter id="T1">
+                    <feTurbulence baseFrequency=".06" type="fractalNoise" />
+                </filter>
+                <rect x="0" y="0" height="150" width="150" filter="url(#T1)" />
+            </svg>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <filter id="T3">
+                    <feTurbulence baseFrequency=".02" numOctaves="1" seed="11" />
+                </filter>
+                <rect x="0" y="0" height="150" width="150" filter="url(#T3)" />
+            </svg>
         </div >
     )
 }
