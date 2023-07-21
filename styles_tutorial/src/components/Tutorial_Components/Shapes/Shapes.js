@@ -294,6 +294,78 @@ function Shape() {
                 </filter>
                 <rect x="0" y="0" height="150" width="150" filter="url(#T3)" />
             </svg>
+            <p>feFlood</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <filter id="f1">
+                    <feFlood x="5%" y="10%" width="30%" height="30%" floodColor="green" floodOpacity=".6" />
+                </filter>
+                <rect x="10%" y="15%" width="20%" height="20%" fill="none" strokeWidth="2" stroke="blue" />
+                <rect x="10%" y="15%" width="20%" height="20%" filter="url(#f1)" />
+                <rect x="40%" y="15%" width="20%" height="20%" fill="red" strokeWidth="2" stroke="black" />
+                <rect x="60%" y="15%" width="20%" height="20%" filter="url(#f1)" />
+            </svg>
+            <p>feComponentTransfer</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <filter id="H">
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComponentTransfer>
+                        <feFuncR type="discrete" tableValues="0 .5 1 0" />
+                        <feFuncG type="discrete" tableValues="0 .5 0" />
+                        <feFuncB type="discrete" tableValues="1" />
+                    </feComponentTransfer>
+                </filter>
+                <rect x="30" y="10" height="100" width="100" filter="url(#H)" />
+            </svg>
+            <p>feComposite</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <filter id="composite" y="0" x="0" width="100%" height="100%">
+                    <feTurbulence baseFrequency=".05" numOctaves="3" result="B" />
+                    <feComposite in2="B" in="SourceGraphic" operator="in" />
+                </filter>
+                <ellipse cx="100" cy="87" rx="75" ry="87" fill="red" filter="url(#composite)" />
+            </svg>
+            <p>feBlend</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <filter id="multiply" x="0" y="0" height="100%" width="100%">
+                    <feBlend mode="screen" in2="BackgroundImage" in="SourceGraphic" />
+                </filter>
+                <g enableBackground="new">
+                    <rect x="10" y="10%" height="4%" width="50%" fill="purple" fillOpacity=".6" />
+                    <rect x="10" y="14%" height="4%" width="50%" fill="blue" fillOpacity=".6" />
+                    <rect x="10" y="18%" height="4%" width="50%" fill="green" fillOpacity=".4" filter="url(#multiply)" />
+                </g>
+            </svg>
+            <p>Translate</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <g id="square">
+                    <rect x="20" y="20" width="30" height="30"
+                        fill="purple"
+                        fillOpacity=".4"
+                        stroke="black"
+                        strokeWidth="2" />
+                </g>
+                <use href="#square" x="80" y="80" />
+            </svg>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <g id="square">
+                    <rect x="20" y="20" width="30" height="30"
+                        fill="purple"
+                        fillOpacity=".4"
+                        stroke="black"
+                        strokeWidth="2" />
+                </g>
+                <use href="#square" transform="translate(80,80)" />
+            </svg>
+            <p>Scale</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <g id="square1">
+                    <rect x="20" y="20" width="30" height="30"
+                        fill="blue"
+                        fillOpacity=".5"
+                        stroke="black" />
+                </g>
+                <use href="#square1" transform="scale(2)" />
+            </svg>
         </div >
     )
 }
