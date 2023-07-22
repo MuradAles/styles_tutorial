@@ -1,7 +1,7 @@
 import "./Shapes.css"
 function Shape() {
     return (
-        <div className="Shape">
+        <article className="Shape">
             <p>circle</p>
             <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 1000 1000">
                 <circle
@@ -366,7 +366,19 @@ function Shape() {
                 </g>
                 <use href="#square1" transform="scale(2)" />
             </svg>
-        </div >
+            <p>Rotate</p>
+            <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 200 200">
+                <circle cx="50" cy="50" r="3"
+                    fill="black" />
+                <g id="arrow" stroke="black">
+                    <line x1="60" y1="50" x2="90" y2="50" />
+                    <polygon points="90 50, 85 45, 85 55" />
+                </g>
+                <use href="#arrow" transform="rotate(60, 50, 50)" />
+                <use href="#arrow" transform="rotate(-90, 50, 50)" />
+                <use href="#arrow" transform="rotate(-150, 50 50)" />
+            </svg>
+        </article >
     )
 }
 
