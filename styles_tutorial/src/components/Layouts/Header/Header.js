@@ -1,9 +1,8 @@
 import "./Header.css"
-function Header() {
+export default function Header() {
     return (
-        <header>
+        <header className="Header">
             <p>Header</p>
         </header>
     )
 }
-export default Header

@@ -1,4 +1,8 @@
 .App {
-    background: #C6D8FF;
-    padding: 50px;
+    display: grid;
+}
+
+.Body {
+    grid-template-columns: 150px 1fr;
+    display: grid;
 }

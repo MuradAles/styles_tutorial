@@ -1,0 +1,17 @@
+.nav_links {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.link_format {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link_shape {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.link_name {
+    grid-area: 1 / 2 / 1 / 2;
+}

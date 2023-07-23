@@ -1,7 +1,7 @@
 // html5 page structure
 import Carousel from "../Carousel/Carousel";
 import "./PageStructure.css"
-function PageStructure() {
+export default function PageStructure() {
     const dataContainer = [
         <div className="html_structure_1">
             <header className="S_header">
@@ -79,5 +79,3 @@ function PageStructure() {
         </div>
     )
 }
-
-export default PageStructure

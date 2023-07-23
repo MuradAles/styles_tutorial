@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import "./Carousel.css"
-function Carousel({ dataContainer }) {
+export default function Carousel({ dataContainer }) {
     const [index, setIndex] = useState(0);
     const length = dataContainer.length;
     const handlePrevious = () => {
@@ -23,4 +23,3 @@ function Carousel({ dataContainer }) {
         </>
     )
 }
-export default Carousel

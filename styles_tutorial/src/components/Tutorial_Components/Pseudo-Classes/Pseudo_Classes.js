@@ -1,4 +1,4 @@
-function Pseudo_Classes() {
+export default function Pseudo_Classes() {
     return (
         <div className="Pseudo_Classes">
             <div className="Linked"></div>
@@ -6,4 +6,3 @@ function Pseudo_Classes() {
         </div>
     )
 }
-export default Pseudo_Classes

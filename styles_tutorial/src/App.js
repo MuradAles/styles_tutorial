@@ -9,30 +9,30 @@ import About from "./components/About";
 import PageNotFound from "./components/Layouts/PageNotFound/PageNotFound";
 import Shape from "./components/Tutorial_Components/Shapes/Shapes";
 import "./App.css"
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Header />
       <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route
-            path="/PageStructure"
-            element={< PageStructure />} />
-          <Route
-            path="/About"
-            element={< About />} />
-          <Route
-            path="*"
-            element={<PageNotFound />} />
-          <Route
-            path="/Shape"
-            element={< Shape />} />
-        </Routes>
+        <div className="Body">
+          <Navigation />
+          <Routes>
+            <Route
+              path="/PageStructure"
+              element={< PageStructure />} />
+            <Route
+              path="/About"
+              element={< About />} />
+            <Route
+              path="/Shape"
+              element={< Shape />} />
+            <Route
+              path="*"
+              element={<PageNotFound />} />
+          </Routes>
+        </div>
       </BrowserRouter>
       <Footer />
     </div>
   );
 }
-
-export default App;

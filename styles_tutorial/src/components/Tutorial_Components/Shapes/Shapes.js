@@ -1,5 +1,5 @@
 import "./Shapes.css"
-function Shape() {
+export default function Shape() {
     return (
         <article className="Shape">
             <p>circle</p>
@@ -381,5 +381,3 @@ function Shape() {
         </article >
     )
 }
-
-export default Shape
