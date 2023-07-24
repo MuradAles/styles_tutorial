@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PageStructure from "./components/Tutorial_Components/PageStructure/PageStructure"
-
+import "./App.css"
 //Page Layout
 import Header from "./components/Layouts/Header/Header";
 import Navigation from "./components/Layouts/Navigation/Navigation";
 import Footer from "./components/Layouts/Footer/Footer";
-import About from "./components/About";
 import PageNotFound from "./components/Layouts/PageNotFound/PageNotFound";
+
+import About from "./components/About";
+//Tutorial Routes
 import Shape from "./components/Tutorial_Components/Shapes/Shapes";
-import "./App.css"
+import PageStructure from "./components/Tutorial_Components/PageStructure/PageStructure"
+import ScrollingEffect from "./components/Tutorial_Components/Scrolling-Effect/Scrolling-Effect";
+
 export default function App() {
   return (
     <div className="App">
@@ -17,6 +20,9 @@ export default function App() {
         <div className="Body">
           <Navigation />
           <Routes>
+            <Route
+              path="*"
+              element={<PageNotFound />} />
             <Route
               path="/PageStructure"
               element={< PageStructure />} />
@@ -27,8 +33,8 @@ export default function App() {
               path="/Shape"
               element={< Shape />} />
             <Route
-              path="*"
-              element={<PageNotFound />} />
+              path="/Scrolling_Effect"
+              element={< ScrollingEffect />} />
           </Routes>
         </div>
       </BrowserRouter>
