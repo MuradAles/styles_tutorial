@@ -15,8 +15,8 @@ import ScrollingEffect from "./components/Tutorial_Components/Scrolling-Effect/S
 export default function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <div className="Body">
           <Navigation />
           <Routes>

@@ -1,4 +1,12 @@
 .Header {
     height: 75px;
     background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: ;
+}
+
+.Header p {
+    margin: 0px;
+    color: aqua;
+    padding: 10px;
 }
