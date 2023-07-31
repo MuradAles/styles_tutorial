@@ -1,5 +1,7 @@
 .SE_div {
-    overflow-y: scroll;
-    height: 100vh;
+    display: grid;
+}
+
+.APP-BG_Sky {
     border: 3px solid blue;
 }
