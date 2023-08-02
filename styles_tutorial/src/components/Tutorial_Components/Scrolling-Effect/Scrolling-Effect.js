@@ -1,23 +1,39 @@
 import "./Scrolling-Effect.css"
 export default function Scrolling_Effect() {
-    const background_svg = (
-        <svg className="APP-BG_Sky" height="200px" width="200px" viewBox="0 0 1000 1000">
+    const sun_svg = (
+        <svg className="sun_svg border_blue" height="300px" width="300px" viewBox="0 0 1000 1000">
             <defs>
                 <g id="sun">
-                    <rect
-                        className="Shape_rect"
-                        width="200"
-                        height="200" />
+                    <circle cx="500" cy="500" r="400" fill="orange" />
                 </g>
             </defs>
-            <use href="#sun" x="400" y="400" />
+            <use href="#sun" />
+        </svg>
+    )
+    const mountains = (
+        <svg className="mountains_svg border_blue" height="300px" width="300px" viewBox="0 0 1000 1000">
+            <defs>
+                <g id="mountains">
+                    <path
+                        d=" M100 100 
+                            Q300 0 500 100
+                            Q300 200 200 200 
+                            T100 100
+                            Z"
+                        fill="blue"
+                        stroke="black"
+                        strokeWidth="10" />
+                </g>
+            </defs>
+            <use href="#mountains" />
         </svg>
     )
     return (
         <div className="SE_div">
             <div className="SE_div_element">
                 <h1>Parallax Effect</h1>
-                {background_svg}
+                {sun_svg}
+                {mountains}
             </div>
         </div >
     )
