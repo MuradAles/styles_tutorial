@@ -30,7 +30,7 @@ export default function Shape() {
             </svg>
             <p>path</p>
             <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 1000 1000">
-                <text x="100" y="200" fontSize="100px">Text: </text>
+                <text x="100" y="200" fontSize="100px"></text>
                 <path d="M250 10 L100 200 L400 200 Z" />
             </svg>
             <svg className="Shape_svg" width="200px" height="200px" viewBox="0 0 1000 1000">
